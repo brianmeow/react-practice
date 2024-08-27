@@ -3,7 +3,7 @@ import { useFetchWeather } from '../hooks/useFetchWeather';
 import CityWeatherCard from '../components/CityWeatherCard';
 
 const Dashboard:React.FC = () => {
-    const [city,setCity] = useState<string>('Shenyang');
+    const [city,setCity] = useState<string>('California');
     const {weatherData,loading,error} = useFetchWeather(city);
     return (
         <div>
